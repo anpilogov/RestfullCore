@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <PlatformTarget>AnyCPU</PlatformTarget>
+    <PlatformTarget>x64</PlatformTarget>
     <Prefer32Bit>true</Prefer32Bit>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
@@ -20,16 +20,16 @@
 
   <ItemGroup>
     <Reference Include="crfsuite.net">
-      <HintPath>..\..\lingvo--Ner-ru-master\crfsuite.net\bin\crfsuite.net.dll</HintPath>
+      <HintPath>bin\Debug\netcoreapp2.0\crfsuite.net.dll</HintPath>
     </Reference>
     <Reference Include="lingvo.core">
-      <HintPath>..\..\lingvo--Ner-ru-master\crfsuite.net\bin\lingvo.core.dll</HintPath>
+      <HintPath>bin\Debug\netcoreapp2.0\lingvo.core.dll</HintPath>
     </Reference>
     <Reference Include="ner-crf.net">
-      <HintPath>..\..\lingvo--Ner-ru-master\ner-crf.net\bin\ner-crf.net.dll</HintPath>
+      <HintPath>bin\Debug\netcoreapp2.0\ner-crf.net.dll</HintPath>
     </Reference>
     <Reference Include="SentSplitter">
-      <HintPath>..\..\lingvo--Ner-ru-master\crfsuite.net\bin\SentSplitter.dll</HintPath>
+      <HintPath>bin\Debug\netcoreapp2.0\SentSplitter.dll</HintPath>
     </Reference>
   </ItemGroup>
 
