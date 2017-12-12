@@ -14,7 +14,13 @@ namespace RestfulService
     {
         public static void Main(string[] args)
         {
-            BuildWebHost(args).Run();
+            var host = new WebHostBuilder()
+                .UseKestrel()               // настраиваем веб-сервер Kestrel 
+                .UseContentRoot(Directory.GetCurrentDirectory())    // настраиваем корневой каталог приложения
+                .UseIISIntegration()        // обеспечиваем интеграцию с IIS
+                .UseStartup<Startup>()    // устанавливаем главный файл приложения
+                .Build();                   // создаем хост
+            host.Run();                     // запускаем приложение
         }
 
         public static IWebHost BuildWebHost(string[] args) =>
